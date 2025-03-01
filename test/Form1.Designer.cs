@@ -30,30 +30,31 @@ namespace test
         private void InitializeComponent()
         {
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCong = new System.Windows.Forms.Button();
+            this.txtA = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtR = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCong
             // 
-            this.button1.Location = new System.Drawing.Point(200, 177);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Cộng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCong.Location = new System.Drawing.Point(200, 177);
+            this.btnCong.Name = "btnCong";
+            this.btnCong.Size = new System.Drawing.Size(75, 23);
+            this.btnCong.TabIndex = 0;
+            this.btnCong.Text = "Cộng";
+            this.btnCong.UseVisualStyleBackColor = true;
+            this.btnCong.Click += new System.EventHandler(this.btnCong_Click);
             // 
-            // textBox1
+            // txtA
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtA.Location = new System.Drawing.Point(145, 32);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(130, 20);
+            this.txtA.TabIndex = 1;
             // 
             // label1
             // 
@@ -63,14 +64,13 @@ namespace test
             this.label1.Size = new System.Drawing.Size(30, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Số A";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // txtB
             // 
-            this.textBox2.Location = new System.Drawing.Point(145, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(130, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtB.Location = new System.Drawing.Point(145, 75);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(130, 20);
+            this.txtB.TabIndex = 1;
             // 
             // label2
             // 
@@ -81,12 +81,12 @@ namespace test
             this.label2.TabIndex = 2;
             this.label2.Text = "Số B";
             // 
-            // textBox3
+            // txtR
             // 
-            this.textBox3.Location = new System.Drawing.Point(145, 122);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtR.Location = new System.Drawing.Point(145, 122);
+            this.txtR.Name = "txtR";
+            this.txtR.Size = new System.Drawing.Size(130, 20);
+            this.txtR.TabIndex = 1;
             // 
             // label3
             // 
@@ -105,10 +105,10 @@ namespace test
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtR);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
+            this.Controls.Add(this.btnCong);
             this.Name = "Form1";
             this.Text = "Tinh Toan";
             this.ResumeLayout(false);
@@ -118,12 +118,12 @@ namespace test
 
         #endregion
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnCong;
+        private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtR;
         private System.Windows.Forms.Label label3;
     }
 }
